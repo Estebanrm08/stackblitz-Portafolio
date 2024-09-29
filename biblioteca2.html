@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="biblioteca.css">
+
+    <title>Zen-Go</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-deep_orange.min.css" />
+
+    
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+  <body>
+   
+    
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <!-- Cabecera de la aplicación -->
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Título de la aplicación -->
+          <span class="mdl-layout-title">Biblioteca Multimedia</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Videos</a>
+            <a href="#fixed-tab-2" class="mdl-layout__tab">Audios</a>
+            <a href="#fixed-tab-3" class="mdl-layout__tab">Imagenes</a>
+          </div>
+      </header>
+      
+      <!-- Menú de la aplicación -->
+      <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">Página Principal</a>
+        </nav>
+      </div>
+
+      <main class="mdl-layout__content">
+        <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+          <div class="page-content" id="canvas-container">
+            <div class="contenedor">  
+              <div class="biblioteca">
+                <div class="video">
+                    <video src="multimedia/fuego.mp4" width="auto" height="auto" controls></video>
+                </div>
+                <div class="pie">
+                    <p>Vídeo 1</p>
+                </div>  
+              </div>
+        
+              <div class="biblioteca">
+                <div class="video">
+                    <video src="multimedia/videoRela.mp4" width="auto" height="auto" controls></video>
+                </div>
+                <div class="pie">
+                    <p>Vídeo 2</p>
+                </div>  
+              </div>
+        
+              <div class="biblioteca">
+                <div class="video">
+                    <video src="multimedia/aves.mp4" width="auto" height="auto" controls></video>
+                </div>
+                <div class="pie">
+                    <p>Vídeo 3</p>
+                </div>  
+              </div>
+        
+              <div class="biblioteca">
+                <div class="video">
+                    <video src="multimedia/videoRela1.mp4" width="auto" height="auto" controls></video>
+                </div>
+                <div class="pie">
+                    <p>Vídeo 4</p>
+                </div>  
+              </div>
+              <div class="biblioteca">
+                <div class="video">
+                    <video src="multimedia/sunset.mp4" width="auto" height="auto" controls></video>
+                </div>
+                <div class="pie">
+                    <p>Vídeo 5</p>
+                </div>  
+              </div>
+              
+          </div>
+          <div class="contenedor1">  
+            <div class="biblioteca">
+              <div class="video">
+                  <video src="multimedia/videoRela2.mp4" width="auto" height="auto" controls></video>
+              </div>
+              <div class="pie">
+                  <p>Vídeo 6</p>
+              </div>  
+            </div>
+      
+            <div class="biblioteca">
+              <div class="video">
+                  <video src="multimedia/videoRela3.mp4" width="auto" height="auto" controls></video>
+              </div>
+              <div class="pie">
+                  <p>Vídeo 7</p>
+              </div>  
+            </div>
+      
+            <div class="biblioteca">
+              <div class="video">
+                  <video src="multimedia/videoRela4.mp4" width="auto" height="auto" controls></video>
+              </div>
+              <div class="pie">
+                  <p>Vídeo 8</p>
+              </div>  
+            </div>
+      
+            <div class="biblioteca">
+              <div class="video">
+                  <video src="multimedia/videoRela5.mp4" width="auto" height="auto" controls></video>
+              </div>
+              <div class="pie">
+                  <p>Vídeo 9</p>
+              </div>  
+            </div>
+            <div class="biblioteca">
+              <div class="video">
+                  <video src="multimedia/videoRela6.mp4" width="auto" height="auto" controls></video>
+              </div>
+              <div class="pie">
+                  <p>Vídeo 10</p>
+              </div>  
+            </div>
+            
+        </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+          <div class="page-content">
+            <div class="columna-imagen">
+              <img src="multimedia/audiosIMG.png" width="650" height="500" alt="Imagen" />
+            </div>
+            <h1>Lo-Fi para que te relajes</h1>
+            <div class="audios">
+            <audio controls loop src="multimedia/lofi1.mp3"></audio>
+            <audio controls loop src="multimedia/lofi2.mp3"></audio>
+            <audio controls loop src="multimedia/lofi3.mp3"></audio>
+            </div>
+          </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+        <div class="galeria">
+          <div class="foto">
+            <img src="multimedia/Canva1.jpg" alt="">
+          </div>
+          <div class="pie">
+              <p>Infografía antiestrés</p>
+              <p>"Consejos antiestrés"</p>
+          </div>
+        </div>
+        <div class="galeria">
+          <div class="foto">
+            <img src="multimedia/Canva2.jpg" alt="">
+          </div>
+          <div class="pie">
+            <p>Infografía tiempo</p>
+            <p>"Gestión de tiempo"</p>
+          </div>
+        </div>
+        <div class="galeria">
+          <div class="foto">
+            <img src="multimedia/Canva3.png" alt="">
+          </div>
+          <div class="pie">
+              <p>Infografía antiestrés</p>
+              <p>"Consejos antiestrés"</p>
+          </div>
+        </div>
+        
+              
+        </section>
+      </main>
+
+   
+      
+    </div>   
+  </body>
+</html>

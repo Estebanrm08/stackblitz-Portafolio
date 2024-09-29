@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login">
+        <div class="container">
+            <img src="https://pattern.uao.edu.co/images/UAO-logo.png" alt="Uao-Logo" class="UaoLogo">
+            <h1 class="title">Ingresa tus datos</h1>
+            <p class="subtitle">Bienvenido a la Autonoma</p>
+            <form action="/" class="form">
+                <label for="email" class="label">Correo Electrónico</label>
+                <input type="email" id="email" placeholder="user@uao.edu.co" class="input input-email">
+                
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" id="password" placeholder="********" class="input input-password">
+                
+                <button type="submit" class="primary-button login-button">Iniciar Sesión</button>
+            </form>
+            <a href="olvide-contraseña.html" class="link">¿Olvidaste la contraseña?</a>
+            <button class="secondary-button register-button" onclick="window.location.href='registro.html'">Registrarse</button>
+        </div>
+    </div>
+</body>
+</html>

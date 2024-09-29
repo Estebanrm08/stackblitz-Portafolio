@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Esteban Román Mesa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav" id="sticker">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <div class="menu">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#proyecto">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="photo" id="inicio">
+            <div class="photo-text">
+                <h4 data-ix="skype">Esteban Román Mesa</h4>
+                <p data-ix="subtitle-hero-up">Estudiante de Ingeniería Multimedia en la Universidad Autónoma de Occidente.</p>
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocJ9FrhivfUUU-4L79EcbOfPcW1Q7oWvCMtjJaguzGC6-XOr-g=s288-c-no" alt="Foto de Esteban Román Mesa">
+            </div>
+            <div class="overlay"></div>
+        </section>
+
+        <section class="content">
+            <div class="grand-title" id="proyecto">
+                <h4 data-ix="slowfade-scroll-bigs">Portafolio: Desarrollo de Experiencias Multimedia para la Web</h4>
+            </div>
+
+            <section class="project">
+                <h3>Ejercicios Propuestos en Clase</h3>
+                <ol>
+                    <li>Paso a Paso Git: "Cómo borrar archivos binarios de un repositorio"</li>
+                    <li>Página web adaptativa que cambia de color según la resolución de la pantalla</li>
+                    <li>Interfaces de inicio de sesión para la Universidad Autónoma de Occidente</li>
+                </ol>
+            </section>
+          
+            <section class="project">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7QSyY--JFrwgRQx7GExIJdxonuL0lIsDQw&s" alt="Ejemplo de uso de git filter-repo">
+                <h3>Borrar Archivos Binarios</h3>
+                <p>Para eliminar archivos binarios del historial de un repositorio Git se usa el comando</p>
+                <code>git filter-repo</code>.
+            </section>            
+                
+                <ul>
+                    <li>
+                        <h4>Paso 1: Instalar git filter-repo</h4>
+                        <img src="https://i.ytimg.com/vi/HV8hfmwDlPY/maxresdefault.jpg" alt="Instalación de git filter-repo">
+                        <p>Primero, debemos tener git filter-repo instalado. En Windows, si tienes Python instalado, puedes instalar git filter-repo con pip:</p>
+                        <code>pip install git-filter-repo</code>
+                    </li>
+        
+                    <li>
+                        <h4>Paso 2: Crear una copia de seguridad del repositorio</h4>
+                        <img src="https://docs.github.com/assets/cb-44807/images/help/repository/open-with-desktop.png" alt="Clonación de repositorio">
+                        <p>Antes de hacer cambios permanentes, es recomendable hacer una copia de seguridad del repositorio. Clona el repositorio en una carpeta local:</p>
+                        <code>git clone --mirror https://url-del-repositorio.git repo-backup</code>
+                    </li>
+        
+                    <li>
+                        <h4>Paso 3: Usar git filter-repo para eliminar los archivos binarios</h4>
+                        <img src="https://www.adslzone.net/app/uploads-adslzone.net/2022/08/borrar-archivos-imborrables-windows.jpg?x=480&y=375&quality=40" alt="Uso de git filter-repo para eliminar archivos binarios">
+                        <p>Dirígete al directorio del repositorio:</p>
+                        <code>cd path/to/your/repo</code>
+                        <p>Ejecuta el siguiente comando para eliminar los archivos binarios:</p>
+                        <code>git filter-repo --path "path/al/archivo" --invert-paths</code>
+                        <p>Reemplaza "path/al/archivo" con la ruta relativa al archivo binario que deseas eliminar. Si requieres eliminar múltiples archivos o carpetas, puedes incluir varias rutas separadas por comas.</p>
+                        <code>git filter-repo --path '*.exe' --invert-paths</code>
+                    </li>
+        
+                    <li>
+                        <h4>Paso 4: Verifica el resultado</h4>
+                        <img src="https://www.renaldibilance.it/wp-content/uploads/2021/04/vp3-300x236.jpg" alt="Verificación del repositorio">
+                        <p>Revisa el estado del repositorio para asegurarte de que los archivos han sido eliminados:</p>
+                        <code>git log --stat</code>
+                        <p>Este comando mostrará el historial de confirmaciones sin los archivos eliminados.</p>
+                    </li>
+        
+                    <li>
+                        <h4>Paso 5: Forzar el push de los cambios al repositorio remoto</h4>
+                        <img src="https://www.marketing91.com/wp-content/uploads/2015/07/Push-strategy.jpg" alt="Forzar push al repositorio remoto">
+                        <p>Finalmente, deberás forzar un push de los cambios al repositorio remoto. Este es un cambio destructivo que afectará a todos los usuarios del repositorio:</p>
+                        <code>git push origin --force --all</code>
+                        <br>
+                        <code>git push origin --force --tags</code>
+                    </li>
+        
+                    <li>
+                        <h4>Paso 6: Notifica a los colaboradores</h4>
+                        <img src="https://www.justiciatransparente.com.mx/wp-content/uploads/2021/04/notifiacion.jpg" alt="Notificación a los colaboradores">
+                        <p>Si otros usuarios están trabajando en el repositorio, deberás notificarles para que también actualicen sus copias locales:</p>
+                        <code>git fetch --all</code>
+                        <br>
+                        <code>git reset --hard origin/main</code>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="project">
+                <h3>Página Web Responsive y Adaptativa con Cambio de Color</h3>
+                <p>Desarrollo de una página web adaptativa donde se cambia el diseño de los colores al modificar la resolución de la pantalla.</p>
+                <p>Enlace directo: <a href="biblioteca2.html" class="link">Página Web Responsive</a></p>
+                <p>Enlace a GitHub: <a href="https://github.com/Estebanrm08/Desarolloweb.git" class="link" target="_blank">Repositorio en GitHub</a></p>
+            </section>
+            
+            <section class="project">
+                <h3>Interfaces de Inicio de Sesión para la Universidad Autónoma</h3>
+                <p>Creación de interfaces HTML para el registro de usuario, recuperación de contraseña e inicio de sesión.</p>
+                <p>Enlace directo: <a href="Interfaces/index.html" class="link" target="_blank">Interfaces HTML</a></p>
+                <p>Enlace a GitHub: <a href="https://github.com/edwinmgallego/clase-practica-css/tree/EstebanR/EstebanRoman" class="link" target="_blank">Repositorio en GitHub</a></p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+        <h4 data-ix="slowfade-scroll-bigs">Contacto</h4>
+        <div class="container">
+            <form action="enviar.php" method="post" style="max-width: 600px; margin: 0 auto;">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa Nombre" class="rect" required>
+                    <span class="input-description">Tu nombre completo</span>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa Correo" class="rect" required>
+                    <span class="input-description">Tu dirección de correo electrónico</span>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Ingresa Teléfono" class="rect">
+                    <span class="input-description">Tu número de contacto (opcional)</span>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" class="rect" required></textarea>
+                    <span class="input-description">Escribe tu mensaje aquí</span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="social-media-links" style="text-align: center; margin-top: 20px;">
+            <a href="https://www.instagram.com/estebanroman08?igsh=OXVoejZhZXR2Yzdi" target="_blank" style="text-decoration: none; color: #000;">
+                <img src="instagram.png" alt="Instagram" style="width: 20px; height: 20px; margin-right: 5px;">
+                Instagram
+            </a>
+            <a href="https://github.com/Estebanrm08" target="_blank" style="margin-left: 20px; text-decoration: none; color: #000;">
+                <img src="github.png" alt="GitHub" style="width: 20px; height: 20px; margin-right: 5px;">
+                GitHub
+            </a>
+        </div>        
+</body>
+</html>

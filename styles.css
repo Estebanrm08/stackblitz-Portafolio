@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.menu a {
+  transition: all 0.3s ease;
+}
+
+.nav {
+  text-align: left;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+  z-index: 1000;
+  background-color: #3c3f46;
+}
+
+.menu {
+  margin: 0 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 200ms ease;
+}
+
+.menu a:hover {
+  color: #ffa726;
+}
+
+.menu h5 {
+  margin: 0 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+}
+
+label {
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#toggle {
+  display: none;
+}
+
+.photo {
+  width: 100%;
+  height: 600px;
+  background: url('https://www.salleurl.edu/sites/default/files/styles/ample_1400/public/content/nodes/Estudio/image/453/772/doble-grado-ingenieria-informatica-multimedia-la-salle.jpg')
+    center center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.photo-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.photo h4 {
+  font-size: 48px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.photo p {
+  width: 70%;
+  margin: 20px auto 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.content {
+  background-color: #fff;
+  padding: 50px 20px;
+}
+
+.grand-title h4 {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grand-title h4:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ffa726;
+  margin: 20px auto 0;
+}
+
+.text {
+  text-align: center;
+  color: #555;
+}
+
+.inner-text {
+  margin: 20px 0;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.inner-text:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.inner-text h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+.inner-text p {
+  font-size: 14px;
+  color: #777;
+}
+
+.portfolio {
+  padding: 50px 0;
+  background-color: #f0f4f8;
+}
+
+.portfolio h4 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.portfolio-item {
+  width: 31%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .menu {
+    text-align: center;
+  }
+
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .photo-text h4 {
+    font-size: 36px;
+  }
+
+  .photo-text p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  #toggle:checked ~ .menu a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 40px 20px;
+  background-color: #3c3f46;
+  color: #fff;
+  text-align: center;
+}
+
+.footer h4 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.footer h4:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #88cca4;
+  margin: 20px auto;
+}
+
+ul li img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-description {
+  font-size: 0.9em;
+  color: rgb(192, 146, 60);
+  margin-top: 5px;
+  display: block;
+}
+
+.rect {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 600px) {
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .input-description {
+    font-size: 0.8em;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .input-description {
+    font-size: 0.8em;
+  }
+
+  button {
+    width: 100%;
+  }
+}
